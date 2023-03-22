@@ -1,0 +1,12 @@
+<div class="h-screen w-full bg-slate-200 flex flex-col  items-center pt-20 gap-12 sm:flex-row sm:gap-20 sm:justify-center sm:items-stretch " >
+    <div class="hover:animate-pulse hover:skew-y-1  border-double border-4 border-indigo-600  h-1/6 w-3/6 bg-gradient-to-r from-cyan-500 to-blue-500 sm:h-2/6  rounded-xl hover:from-blue-500 hover:to-red-200  text-center sm:w-3/12">
+        
+        <h2  class="text-xs sm:text-2xl font-bold pt-4 ">Balance : </h2>
+        <h5 class="sm:pt-14 text-4xl font-medium text hover:scale-125 cursor-pointer">{{sum | currency:'EUR'}}</h5>
+    </div>
+    
+    <div class="hover:animate-pulse hover:skew-y-1 border-double border-4 border-indigo-600 h-1/6 w-3/6 bg-gradient-to-l from-cyan-500 to-blue-500 sm:h-2/6  rounded-xl hover:from-blue-500 hover:to-red-200 text-center sm:w-3/12">
+        <h2 class="text-xs sm:text-2xl font-bold pt-4 ">number users :  </h2>
+        <a routerLink="/"><h5 class="sm:pt-14 text-4xl font-medium text hover:scale-125 cursor-pointer">{{acc}}</h5></a>
+    </div>
+</div>

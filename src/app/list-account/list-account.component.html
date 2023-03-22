@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-8 py-4">
+
+    <input type="text" placeholder="Search"
+        class="peer h-full w-11/12 rounded-[7px] border border-green-400  bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-blue-gray-200 focus:border-2 focus:border-pink-500  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 mx-auto mt-6"
+        (input)="serchquery($event)">
+
+    <div class="grid grid-cols-1 gap-6 py-8   md:grid-cols-2 lg:grid-cols-3">
+        <app-account-card class="mx-auto" *ngFor="let account of Accounts; let index = index" [account]="account"
+            [index]="index+1" (ondelete)="delete($event)" (onupdate)="updateaccount($event)"
+            [isdeleteloading]="getinloading(account)"></app-account-card>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+<div [ngClass]="{ 
+    ' border-blue-600': account?.gender == 'Male',' border-pink-600': account?.gender == 'Female' }"
+    class="block max-w-sm border-t-4  rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700  lg:hover:scale-110 mb-5">
+
+    <h1 class="text-xl font-semibold text-green-600/100 dark:text-blue-500/100 px-28 py-4">Employer N' {{index}}</h1>
+    <app-account-props [Account]="account" [value]="'Personal Info'"></app-account-props>
+    <div class="flex flex-row gap-5 justify-evenly p-2">
+
+        <h3 *ngIf="!show"><span class="italic text-xs pr-2 text-slate-500">Firstname : </span>{{account?.firstName}}
+        </h3>
+        <input type="text" value="{{updatedvalue?.firstName}}"
+            [(ngModel)]="updatedvalue.firstName"
+            class=" w-3/6 rounded-[7px] border border-green-400  text-gray-500" *ngIf="show">
+        <h3 *ngIf="!show"><span class="italic text-xs pr-2 text-slate-500">LastName : </span>{{account?.lastName}}</h3>
+        <input type="text" value="{{updatedvalue?.lastName}}"
+        [(ngModel)]="updatedvalue.lastName"
+            class="w-3/6  rounded-[7px] border border-green-400  text-gray-500" *ngIf="show">
+    </div>
+    <h3 *ngIf="!show" class="font-bold" [ngClass]="{'text-red-600': account?.gender == 'Female'
+    ,'text-blue-600':account?.gender == 'Male'}">
+        <span class="italic text-xs pr-2 text-slate-500 font-normal">Gender : </span>
+        {{account?.gender}}
+    </h3>
+    <div *ngIf="show" class="mt-2 mb-[0.125rem] mr-4 inline-block min-h-[1.5rem] pl-[1.5rem]">
+        <input [checked]="updatedvalue?.gender == 'Male'"
+        type="radio" name="check" id="inlineCheckbox1" value="Male" [(ngModel)]="updatedvalue.gender"/>
+        <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="inlineCheckbox1">Male</label>
+    </div>
+    <div *ngIf="show" class="mb-[0.125rem] mr-4 inline-block min-h-[1.5rem] pl-[1.5rem]">
+        <input  [checked]="updatedvalue?.gender == 'Female'"
+            type="radio" name="check" id="inlineCheckbox2" value="Female" [(ngModel)]="updatedvalue.gender"/>
+        <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="inlineCheckbox2">Female</label>
+    </div>
+
+    <app-account-props [Account]="account" [value]="'Crudential'"></app-account-props>
+    <div class="p-4">
+        <h3 *ngIf="!show"><span class="italic text-xs pr-2 text-slate-500">Address : </span>{{account?.address}}</h3>
+        <input type="text" value="{{updatedvalue?.address}}"
+        [(ngModel)]="updatedvalue.address"
+            class="my-2 w-5/6 rounded-[7px] border border-green-400 placeholder:p-2 text-gray-500" *ngIf="show">
+        <h3 *ngIf="!show"><span class="italic text-xs pr-2 text-slate-500">Email : </span>{{account?.email}}</h3>
+        <input type="text" value=""
+        [(ngModel)]="updatedvalue.email"
+            class="my-2 w-5/6 rounded-[7px] border border-green-400 placeholder:p-2 text-gray-500" *ngIf="show">
+    </div>
+    <div class="flex flex-row  justify-around py-4  ">
+        <button 
+            class="middle none center  rounded-lg bg-green-500 py-3 px-8 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+            data-ripple-light="true" (click)="show = !show"> {{show ? 'go back' : 'Edit'}}</button>
+        <button *ngIf="!show" (click)="delete()"
+            class="middle none center  rounded-lg bg-red-500 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
+            data-ripple-light="true" [disabled]="isdeleteloading">
+            {{isdeleteloading ? 'Loading...' : 'Delete'}}
+        </button>
+        <button *ngIf="!show" type="button" routerLink="/detail/{{account?.id}}"
+            class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Detail
+            <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <button *ngIf="show" type="button" (click)="update()"
+        class="middle none center  rounded-lg bg-blue-500 py-3 px-8 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+        Update
+    </button>
+    </div>
+
+</div>

@@ -1,0 +1,304 @@
+{
+  "customers": [
+    {
+      "id": "2da6cbc8-3240-4bc8-b31c-60f62564fe37",
+      "firstName": "aaaaaaaaa",
+      "lastName": "aaaaaaaaaaa",
+      "gender": "Male",
+      "email": "ah@gmail.comaaaa",
+      "address": "addresssaaa",
+      "type": "saving",
+      "balance": 1000
+    },
+    {
+      "id": "ca32646f-e09e-462d-b1e5-76cd9eb16d87",
+      "firstName": "Charla",
+      "lastName": "Courteney",
+      "email": "ccourteney2@nih.gov",
+      "gender": "Genderfluid",
+      "address": "37 Dapin Point",
+      "balance": 1000,
+      "type": "saving"
+    },
+    {
+      "id": "7578e374-6dac-4410-9cfb-ef0ef1abb89d",
+      "firstName": "Bogey",
+      "lastName": "Stothard",
+      "gender": "Female",
+      "email": "bstothard3@theatlantic.com",
+      "address": "58 Pleasure Point",
+      "type": "saving",
+      "balance": 1000
+    },
+    {
+      "id": "0074b69f-911e-4c79-b8bb-dbac982f5e1f",
+      "firstName": "Temple",
+      "lastName": "Roston",
+      "email": "troston4@ox.ac.uk",
+      "gender": "Male",
+      "address": "734 Fairview Center",
+      "balance": 1000,
+      "type": "saving"
+    },
+    {
+      "id": "98ea2b1b-e25f-47d9-b5c5-8c8b2b9199f4",
+      "firstName": "Felicity",
+      "lastName": "Dayton",
+      "email": "fdayton5@sohu.com",
+      "gender": "Female",
+      "address": "27553 Coleman Street",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "a6d48d15-4db1-47e5-9d33-f8545f4a6462",
+      "firstName": "Louella",
+      "lastName": "Felder",
+      "email": "lfelder6@macromedia.com",
+      "gender": "Female",
+      "address": "3 American Ash Terrace",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "01a1e4e1-5e8a-4669-a4cb-03782bf30d7b",
+      "firstName": "Alfreda",
+      "lastName": "Bendon",
+      "email": "abendon7@e-recht24.de",
+      "gender": "Female",
+      "address": "5 Loomis Terrace",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "0126e908-e7c5-40b3-8667-a40ade36eccb",
+      "firstName": "Sara",
+      "lastName": "Bischoff",
+      "email": "sbischoff8@chicagotribune.com",
+      "gender": "Female",
+      "address": "6239 Alpine Trail",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "67417258-560d-4467-bba4-c996d26abdab",
+      "firstName": "Dorie",
+      "lastName": "Glaister",
+      "email": "dglaister9@irs.gov",
+      "gender": "Female",
+      "address": "05239 Melvin Trail",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "6ac848d6-05bf-4e69-ad67-86534107247c",
+      "firstName": "Lance",
+      "lastName": "Lynock",
+      "email": "llynocka@time.com",
+      "gender": "Male",
+      "address": "807 Montana Way",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "6898a1b5-a105-4eb1-a5a6-c8307c969677",
+      "firstName": "Rudd",
+      "lastName": "Glinde",
+      "email": "rglindeb@virginia.edu",
+      "gender": "Male",
+      "address": "956 Mifflin Alley",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "6a62a8f0-ccaa-491c-bbfe-90ba01c69c74",
+      "firstName": "Chen",
+      "lastName": "Duchenne",
+      "email": "cduchennec@lulu.com",
+      "gender": "Male",
+      "address": "3238 Lien Avenue",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "54f7ce20-e282-4d4f-85c0-9982bf9e081f",
+      "firstName": "Kaylil",
+      "lastName": "Maffeo",
+      "email": "kmaffeod@altervista.org",
+      "gender": "Female",
+      "address": "17 Judy Parkway",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "05e29be3-1986-4b58-95b9-1abdeb910737",
+      "firstName": "Darryl",
+      "lastName": "Yurukhin",
+      "email": "dyurukhine@archive.org",
+      "gender": "Female",
+      "address": "64 Manley Parkway",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "6bdbbe6f-2089-4cba-a030-637756b2ddd7",
+      "firstName": "Essa",
+      "lastName": "Yurkevich",
+      "email": "eyurkevichf@nps.gov",
+      "gender": "Female",
+      "address": "03 Dennis Hill",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "ef2c4d4d-4b33-46e5-8e8e-cd12296ac14c",
+      "firstName": "Mariya",
+      "lastName": "Keitley",
+      "email": "mkeitleyg@godaddy.com",
+      "gender": "Female",
+      "address": "9445 Mandrake Way",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "bf96a22e-ab77-4fed-9eb0-221ceba9f4ae",
+      "firstName": "Roderich",
+      "lastName": "Hanny",
+      "email": "rhannyh@prlog.org",
+      "gender": "Male",
+      "address": "76264 Bluejay Alley",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "d86c7cf9-fbaf-443d-bb94-c34c5d87359c",
+      "firstName": "Gabe",
+      "lastName": "Fidgeon",
+      "email": "gfidgeoni@indiegogo.com",
+      "gender": "Male",
+      "address": "42727 Ryan Court",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "0baa41e1-cc21-4a8d-b85a-e4abbe96495e",
+      "firstName": "Gina",
+      "lastName": "Ireson",
+      "email": "giresonj@ask.com",
+      "gender": "Non-binary",
+      "address": "75 Sauthoff Court",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "0c0d59ce-7b8b-4c62-b0b1-2caad8db91ca",
+      "firstName": "Diarmid",
+      "lastName": "O'Dee",
+      "email": "dodeek@bigcartel.com",
+      "gender": "Agender",
+      "address": "03 Old Shore Drive",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "e7f038f6-2624-491d-ac8f-d743ad3ac097",
+      "firstName": "Aggie",
+      "lastName": "Alleyne",
+      "email": "aalleynel@cbsnews.com",
+      "gender": "Genderfluid",
+      "address": "4 Oneill Hill",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "ed137d8d-87e0-4ed2-8d76-7ac58e16166f",
+      "firstName": "Jock",
+      "lastName": "Skilbeck",
+      "email": "jskilbeckm@godaddy.com",
+      "gender": "Male",
+      "address": "17340 Towne Center",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "749ea490-4710-48ae-b6a5-9a9cbdbaaa03",
+      "firstName": "Bette-ann",
+      "lastName": "Murphy",
+      "email": "bmurphyn@fema.gov",
+      "gender": "Female",
+      "address": "2293 Farragut Trail",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "afb56e94-4f51-4902-a785-379af91db426",
+      "firstName": "Trace",
+      "lastName": "Kinghorne",
+      "email": "tkinghorneo@altervista.org",
+      "gender": "Male",
+      "address": "324 Corry Court",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "17398480-adcf-4b7c-ae3c-9748a0618f45",
+      "firstName": "Shantee",
+      "lastName": "Jensen",
+      "email": "sjensenp@nifty.com",
+      "gender": "Female",
+      "address": "14 Calypso Hill",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "f4ae2202-4106-4ca1-9d43-c7faef4a48a8",
+      "firstName": "Peg",
+      "lastName": "Hatherall",
+      "email": "phatherallq@tripod.com",
+      "gender": "Female",
+      "address": "5 Scoville Hill",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "1a10257c-9ea4-42b6-adec-1700abf84458",
+      "firstName": "Gene",
+      "lastName": "Devonish",
+      "email": "gdevonishr@uiuc.edu",
+      "gender": "Female",
+      "address": "9299 Erie Junction",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "829faa61-7264-446b-96ef-47f26c037fb4",
+      "firstName": "Davie",
+      "lastName": "Town",
+      "email": "dtowns@e-recht24.de",
+      "gender": "Male",
+      "address": "69915 Messerschmidt Circle",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "a0299050-7a99-4eab-8d42-d0bce08f0e85",
+      "firstName": "Vale",
+      "lastName": "Gallier",
+      "email": "vgalliert@blog.com",
+      "gender": "Male",
+      "address": "3 Anniversary Court",
+      "balance": 1000,
+      "type": "checking"
+    },
+    {
+      "id": "uLuEYk1",
+      "firstName": "ahmedzz",
+      "lastName": "eddahby",
+      "gender": "Male",
+      "email": "ah@gmail.com",
+      "address": "zhdzhdhd",
+      "type": "checking",
+      "balance": 500
+    }
+  ]
+}

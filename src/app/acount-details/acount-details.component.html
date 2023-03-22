@@ -1,0 +1,47 @@
+<div class="flex justify-center lg:w-full pt-12">
+    <div [ngClass]="{ 
+        ' border-blue-600': account?.gender == 'Male',' border-pink-600': account?.gender == 'Female' }"
+        class="block border-t-4 rounded-lg bg-white text-center shadow-lg dark:bg-neutral-700 lg:w-2/6 ">
+        <app-account-props [Account]="account" [value]="'Id'"></app-account-props>
+        <div class="p-3">
+            <h3>{{account?.id}}</h3>
+        </div>
+        <app-account-props [Account]="account" [value]="'Personal Info'"></app-account-props>
+        <div class="flex flex-row gap-3 justify-evenly p-2">
+            <h3><span class="italic text-xs pr-2 text-slate-500">Firstname : </span>{{account?.firstName}}
+            </h3>
+            <h3><span class="italic text-xs pr-2 text-slate-500">LastName : </span>{{account?.lastName}}</h3>
+        </div>
+        <h3 class="font-bold p-3" [ngClass]="{'text-red-600': account?.gender == 'Female'
+            ,'text-blue-600':account?.gender == 'Male'}">
+                <span class="italic text-xs pr-2 text-slate-500 font-normal">Gender : </span>
+                {{account?.gender}}
+            </h3>
+        <app-account-props [Account]="account" [value]="'Crudential'"></app-account-props>
+        <div class="p-4 flex gap-3 flex-col">
+            <h3><span class="italic text-xs pr-2 text-slate-500">Address : </span>{{account?.address}}</h3>
+
+            <h3><span class="italic text-xs pr-2 text-slate-500">Email : </span>{{account?.email}}</h3>
+        </div>
+        <app-account-props [Account]="account" [value]="'Account Info'"></app-account-props>
+        <div class="flex flex-col gap-3 ">
+            <h3 class="text-2xl  w-full  font-extrabold "><span class="italic text-xs pr-2 text-slate-500">Balance : </span>{{account?.balance| currency:'EUR'}}</h3>
+            <h3><span class="italic text-xs pr-2 text-slate-500">Account type : </span>{{account?.type}}</h3>
+            
+        </div>
+        <div class="flex flex-row  justify-around py-4  ">
+
+            <button type="button" routerLink="/"
+                class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                back
+                <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</div>
